@@ -1,0 +1,27 @@
+<div class="centered">
+  <%= image_tag "https://prod-chadatalake.s3.eu-west-3.amazonaws.com/startups/088064ed-ca6e-4929-ab88-1991b329428c.png", width:"100px", height:"100px"%>
+  <h1> Academie des enfants espions </h1>
+</div>
+
+<div class="spies">
+
+<% Spy.all.each do |spy| %>
+
+  <div class="spy-card">
+
+    <%= image_tag spy.image, width: "40%" %>
+    <div class="spy-description">
+      <p>Name: <span class="spy-info"> <%= spy.name %> </span> </p>
+      <p>Arrival Date: <span class="spy-info"> ? <%=  %> </span> </p>
+      <p>Number of missions: <span class="spy-info"> ?  <%=  %>  </span> </p>
+      <p>Number of secrets: <span class="spy-info"> ? <%=  %>  </span> </p>
+
+      <p class="spy-mission"><%= spy.missions.last.description %> </p>
+    </div>
+
+  </div>
+
+<% end %>
+
+</div>
+
