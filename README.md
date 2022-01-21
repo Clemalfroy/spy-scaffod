@@ -1,4 +1,4 @@
-# En Cavale scaffold
+# En Cavale Interview scaffold
 
 This is the starting point for the En Cavale coding interview.
 
