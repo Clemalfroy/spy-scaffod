@@ -1,4 +1,4 @@
-# Rails test scaffold
+# En Cavale scaffold
 
 This is the starting point for the En Cavale coding interview.
 
